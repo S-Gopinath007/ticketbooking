@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Seats</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        main{
+            background-image: url(./IMAX-screen.jpg);
+            height: 100vh;
+            width: 100%;
+            background-size: cover;  /* Ensures the image covers the entire element */
+            background-position: center;  /* Centers the image */
+            background-repeat: no-repeat;
+        }
+        h1{
+            color: rgb(247, 243, 243);
+        }
+        h2{
+            color: rgb(253, 247, 247);
+        }
+        p{
+            color: rgb(248, 241, 241);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie Ticket Booking</h1>
+    </header>
+    <main>
+        <center>
+            <h2>Select Your Seats</h2>
+        <p>Choose your seats for <strong>Movie 1</strong></p>
+
+        </center>
+        
+        
+        <div class="seats">
+            <!-- Seat layout with unique seat IDs -->
+            <div class="seat available" data-seat="1">1</div>
+            <div class="seat available" data-seat="2">2</div>
+            <div class="seat booked" data-seat="3">3</div>
+            <div class="seat available" data-seat="4">4</div>
+            <div class="seat available" data-seat="5">5</div>
+            <div class="seat booked" data-seat="6">6</div>
+            <div class="seat available" data-seat="7">7</div>
+            <div class="seat available" data-seat="8">8</div>
+            <div class="seat available" data-seat="9">9</div>
+            <div class="seat available" data-seat="10">10</div>
+
+            <div class="seat available" data-seat="11">11</div>
+            <div class="seat available" data-seat="12">12</div>
+            <div class="seat available" data-seat="13">13</div>
+            <div class="seat available" data-seat="14">14</div>
+            <div class="seat available" data-seat="15">15</div>
+
+            <div class="seat available" data-seat="16">16</div>
+            <div class="seat available" data-seat="17">17</div>
+            <div class="seat available" data-seat="18">18</div>
+            <div class="seat available" data-seat="19">19</div>
+            <div class="seat available" data-seat="20">20</div>
+
+            <div class="seat available" data-seat="21">21</div>
+            <div class="seat available" data-seat="22">22</div>
+            <div class="seat available" data-seat="23">23</div>
+            <div class="seat available" data-seat="24">24</div>
+            <div class="seat available" data-seat="9">25</div>
+            <div class="seat available" data-seat="10">26</div>
+
+            <div class="seat available" data-seat="11">27</div>
+            <div class="seat available" data-seat="12">28</div>
+            <div class="seat available" data-seat="13">39</div>
+            <div class="seat available" data-seat="14">30</div>
+            <div class="seat available" data-seat="15">31</div>
+
+            <div class="seat available" data-seat="16">32</div>
+            <div class="seat available" data-seat="17">33</div>
+            <div class="seat available" data-seat="18">34</div>
+            <div class="seat available" data-seat="19">35</div>
+            <div class="seat available" data-seat="20">36</div>
+
+            <div class="seat available" data-seat="21">37</div>
+            <div class="seat available" data-seat="22">38</div>
+            <div class="seat available" data-seat="23">39</div>
+            <div class="seat available" data-seat="25">40</div>
+
+            <div class="seat available" data-seat="26">41</div>
+            <div class="seat available" data-seat="27">42</div>
+            <div class="seat available" data-seat="28">43</div>
+            <div class="seat available" data-seat="29">44</div>
+            <div class="seat available" data-seat="30">45</div>
+
+            <div class="seat available" data-seat="31">46</div>
+            <div class="seat available" data-seat="32">47</div>
+            <div class="seat available" data-seat="33">48</div>
+            <div class="seat available" data-seat="34">49</div>
+            <div class="seat available" data-seat="35">50</div>
+            <div class="seat available" data-seat="36">51</div>
+            <div class="seat available" data-seat="37">52</div>
+            <div class="seat available" data-seat="38">53</div>
+            <div class="seat available" data-seat="39">54</div>
+            <div class="seat available" data-seat="40">55</div>
+
+            <div class="seat available" data-seat="41">56</div>
+            <div class="seat available" data-seat="42">57</div>
+            <div class="seat available" data-seat="43">58</div>
+            <div class="seat available" data-seat="44">59</div>
+            <div class="seat available" data-seat="45">60</div>
+
+            <div class="seat available" data-seat="46">61</div>
+            <div class="seat available" data-seat="47">62</div>
+            <div class="seat available" data-seat="48">63</div>
+            <div class="seat available" data-seat="44">64</div>
+            <div class="seat available" data-seat="45">65</div>
+
+            <div class="seat available" data-seat="46">66</div>
+            <div class="seat available" data-seat="47">67</div>
+            <div class="seat available" data-seat="48">68</div>
+            <div class="seat available" data-seat="49">69</div>
+            <div class="seat available" data-seat="50">70</div>
+            <div class="seat available" data-seat="49">71</div>
+            <div class="seat available" data-seat="50">72</div>
+        </div>
+
+        <div id="selected-seats">
+            <center> <p>Selected Seats: <span id="seat-list">None</span></p></center>
+           
+        </div>
+
+        <!-- Link to the payment page -->
+        <center> <a href="payment.html" id="proceed-to-payment" class="button">Proceed to Payment</a></center>
+       
+    </main>
+    <footer>
+        <p>&copy; 2024 Movie Booking Inc.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- External JS file for functionality -->
+</body>
+</html>
